@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro</h1>
+            <nav>
+                <a href="/">Início</a>
+                <a href="/cronograma">Cronograma</a>
+            </nav>
+        </header>
+        <main>
+            <form action="/enviar" method="POST" enctype="multipart/form-data">
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <label>Área de Interesse:</label>
+                <select name="area" required>
+                    <option value="eletrica">Elétrica</option>
+                    <option value="desenho">Desenho</option>
+                </select>
+                <label>Currículo (PDF):</label>
+                <input type="file" name="curriculo" accept=".pdf" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

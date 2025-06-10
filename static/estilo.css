@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.topo {
+  background-color: #1a4e8a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.empresa-nome h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.subtexto {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #d9e6ff;
+}
+
+.link-cronograma a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #0e2e5c;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.principal {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #1a4e8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #163f6d;
+}
+
+.integrantes h2 {
+  margin-top: 40px;
+  color: #1a4e8a;
+}
+
+.integrantes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.integrantes li {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.titulo-cronograma {
+    text-align: center;
+    color: #1a4e8a;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.cronograma-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.evento {
+    background-color: #e8f0ff;
+    border-left: 6px solid #1a4e8a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+}
+
+.evento .data {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a4e8a;
+}
+
+.destaque {
+    background-color: #dceeff;
+}
+.titulo-cronograma {
+  text-align: center;
+  color: #1a4e8a;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.cronograma-lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.evento {
+  padding: 20px;
+  border-left: 6px solid #1a4e8a;
+  background-color: #e9f2ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.evento:hover {
+  transform: translateY(-5px);
+}
+
+.evento .data {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a4e8a;
+  margin-bottom: 8px;
+}
+
+.evento.eletrica {
+  border-left-color: #0077cc;
+  background-color: #e0f1ff;
+}
+
+.evento.desenho {
+  border-left-color: #004488;
+  background-color: #f0f7ff;
+}

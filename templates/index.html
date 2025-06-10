@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Essência Tabaco</title>
+  <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="empresa-nome">
+      <h1>Essência Tabaco</h1>
+      <p class="subtexto">Esta é uma empresa fictícia utilizada para fins educacionais.</p>
+    </div>
+    <div class="link-cronograma">
+      <a href="/cronograma">Cronograma</a>
+    </div>
+  </header>
+
+  <main class="principal">
+    <section class="formulario">
+      <h2>Envio de Currículo</h2>
+      <form action="/enviar" method="POST" enctype="multipart/form-data">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Área de Interesse:</label>
+        <select name="area" required>
+            <option value="eletrica">Elétrica</option>
+            <option value="desenho">Desenho</option>
+        </select>
+        <label>Currículo (PDF):</label>
+        <input type="file" name="curriculo" accept=".pdf" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="integrantes">
+      <h2>Integrantes do grupo:</h2>
+      <ul>
+        <li>Henry M. da Silveira</li>
+        <li>Clara X. da Silva</li>
+        <li>Mariana M.</li>
+        <li>Renan G. dos Santos</li>
+        <li>Milena F. da Silva</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
